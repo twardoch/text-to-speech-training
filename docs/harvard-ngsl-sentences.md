@@ -11,8 +11,8 @@ The bill was paid every third week.
 Type out three lists of orders. 
 The harder he tried the less he got done. 
 Two plus seven is less than ten. 
-Guess the result from the ﬁrst scores. 
-Drop the two when you add the ﬁgures. 
+Guess the result from the first scores. 
+Drop the two when you add the figures. 
 Sunday is the best part of the week. 
 Where were they when the noise started. 
 Write at once or you may forget it. 
@@ -25,7 +25,7 @@ Time brings us many changes.
 Women form less than half of the group. 
 Most of the news is easy for us to hear. 
 Next Tuesday we must vote. 
-It takes a lot of help to ﬁnish these. 
+It takes a lot of help to finish these. 
 Go now and come here later. 
 That move means the game is over. 
 He wrote down a long list of items. 
@@ -48,9 +48,9 @@ The team with the best timing looks good.
 The facts don’t always show who is right. 
 It was done before the boy could see it. 
 To send it now in large amounts is bad. 
-The ﬁrst part of the plan needs changing. 
+The first part of the plan needs changing. 
 Many hands help get the job done. 
-Open your book to the ﬁrst page. 
+Open your book to the first page. 
 Will you please answer that phone. 
 Small children came to see him. 
 She called his name many times. 

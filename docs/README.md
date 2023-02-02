@@ -36,7 +36,8 @@ Published in [Yazawa, Kakeru. (2022). Harvard-NGSL sentences for English learner
 
 ## Harvard stories
 
-- **[Harvard-NGSL story](harvard-ngsl-story)**
+- **[Harvard-NGSL story 1](harvard-ngsl-story-1) “Life’s Challenges and Choices”**
+- **[Harvard-NGSL story 2](harvard-ngsl-story-2) “A Day Full of Surprises”**
 - **[Harvard story 1](harvard-story-1) “A Day of Many Activities”**
 - **[Harvard story 2](harvard-story-2) “A Day at the Circus and Beyond”**
 
