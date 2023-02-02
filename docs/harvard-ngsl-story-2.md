@@ -5,9 +5,9 @@
 
 It was just a typical day... or so it seemed. But little did a woman know that she would need help getting back on her feet! It took a LOT of effort — but with the help of her friends, she finally made it up. They laughed and joked, telling her to “go now, and come back later.”
 
-But... the fun wasn’t over yet! Oh, no! As they played a game, the woman made a move that signalled the end of the game. They all cheered “HOORAY!!!”, knowing that their victory was well-deserved. Hah hah hah... One of them wrote down a long list of items, documenting their win for posterity.
+But... the fun wasn’t over yet! Oh, no! As they played a game, the woman made a move that signaled the end of the game. They all cheered “HOORAY!!!”, knowing that their victory was well-deserved. Hah hah hah... One of them wrote down a long list of items, documenting their win for posterity.
 
-So, what did they do next? Good that you ask! They settled down and discussed the game. Then, suddeenly, they realized that much of their story made good sense. They agreed that “to HAVE is better than to WAIT, and HOPE.” The music played on in the background, adding to the lively atmosphere.
+So, what did they do next? Good that you ask! They settled down and discussed the game. Then, suddenly, they realized that much of their story made good sense. They agreed that “to HAVE is better than to WAIT, and HOPE.” The music played on in the background, adding to the lively atmosphere.
 
 However, they all knew that they needed to bring this joyous occasion to an end. “We need an end to all such matters,” they said in unison. Despite not making much money, they had a great time together, so they all agreed that the best way to save money is to simply not spend much.
 
