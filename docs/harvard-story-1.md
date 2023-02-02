@@ -1,5 +1,6 @@
+# Harvard Story 1
 
-## 1. A Day of Many Activities
+## “A Day of Many Activities”
 
 It was a busy day filled with a multitude of tasks and activities. The sun rose, and a young boy was already there to see it. He watched as a birch canoe slid on the smooth planks of a lake, seemingly gliding effortlessly through the water.
 

@@ -1,4 +1,6 @@
-## 2. A Day at the Circus and Beyond
+# Harvard story 2
+
+## “A Day at the Circus and Beyond”
 
 Once upon a time, in a small town, there was a man who lived a simple life. His days were filled with tasks that he carried out with determination. He knew that life was hard, and men often strived to get rich, but he also knew that wealth was not always attainable.
 

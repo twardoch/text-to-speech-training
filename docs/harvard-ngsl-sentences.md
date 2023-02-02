@@ -1,10 +1,8 @@
 # Harvard-NGSL sentences
 
-50 Harvard sentences selected for phonemic balance, but using familiar vocabulary. 
+50 Harvard sentences selected for phonemic balance, but using familiar vocabulary. Published in [Yazawa, Kakeru. (2022). Harvard-NGSL sentences for English learner speech corpora. 10.1109/O-COCOSDA202257103.2022.9998002.](https://www.researchgate.net/publication/365766701_Harvard-NGSL_sentences_for_English_learner_speech_corpora)
 
-Published in [Yazawa, Kakeru. (2022). Harvard-NGSL sentences for English learner speech corpora. 10.1109/O-COCOSDA202257103.2022.9998002.](https://www.researchgate.net/publication/365766701_Harvard-NGSL_sentences_for_English_learner_speech_corpora)
-
---
+--- 
 
 Help the woman get back to her feet. 
 The young girl gave no clear response. 
