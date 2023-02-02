@@ -13,12 +13,12 @@ Various data for text-to-speech (TTS) training.
 
 ### Original IEEE Harvard sentences
 
-The **IEEE Harvard sentences** is a collection of 720 phonemically balanced short sample phrases in English. 
-
 - [HTML](https://www.cs.columbia.edu/~hgs/audio/harvard.html)
 - [TXT](https://www.cs.cmu.edu/afs/cs.cmu.edu/project/fgdata/OldFiles/Recorder.app/utterances/Type1/harvsents.txt)
 - [Audio: American](https://www.voiptroubleshooter.com/open_speech/american.html)
 - [Audio: British](https://www.voiptroubleshooter.com/open_speech/british.html)
+
+The **IEEE Harvard sentences** is a collection of 720 phonemically balanced short sample phrases in English. 
 
 ### Background info
 
@@ -27,16 +27,18 @@ The **IEEE Harvard sentences** is a collection of 720 phonemically balanced shor
 
 ### Harvard-NGSL sentences
 
+- [Harvard-NGSL sentences](harvard-ngsl-sentences)
+
 Kakeru Yazawa has produced a subset of 50 IEEE Harvard sentences from the full list of 720. These are phonemically balanced sentences for English learner speech corpora named the **Harvard-NGSL sentences**. These comprise core high-frequency vocabulary words for second language English learners were selected based on the New General Service List (NGSL), and are thus learner-oriented, unlike most other phoemically balanced materials which contain low-frequency and low-familiarity words that are of limited use for learners. 
 
 Published in [Yazawa, Kakeru. (2022). Harvard-NGSL sentences for English learner speech corpora. 10.1109/O-COCOSDA202257103.2022.9998002.](https://www.researchgate.net/publication/365766701_Harvard-NGSL_sentences_for_English_learner_speech_corpora)
 
-[Harvard-NGSL sentences](harvard-ngsl-sentences)
 
 ## Harvard stories
-
-In 2023, Adam Twardoch used ChatGPT to convert the Harvard-NGSL sentences and two sets of 60 original IEEE Harvard sentences into short stories. These short stories use the original vocabulary, but are formatted for more fluent reading.
 
 - [Harvard-NGSL story](harvard-ngsl-story)
 - [Harvard story 1](harvard-story-1) “A Day of Many Activities”
 - [Harvard story 2](harvard-story-2) “A Day at the Circus and Beyond”
+
+In 2023, Adam Twardoch used ChatGPT to convert the Harvard-NGSL sentences and two sets of 60 original IEEE Harvard sentences into short stories. These short stories use the original vocabulary, but are formatted for more fluent reading.
+
