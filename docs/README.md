@@ -41,8 +41,9 @@ Published in [Yazawa, Kakeru. (2022). Harvard-NGSL sentences for English learner
 - **[Harvard story 1](harvard-story-1) “A Day of Many Activities”**
 - **[Harvard story 2](harvard-story-2) “A Day at the Circus and Beyond”**
 
+In 2023, Adam Twardoch used ChatGPT to convert the Harvard-NGSL sentences and two sets of 60 original IEEE Harvard sentences into short stories. These short stories use the original vocabulary, but are formatted for more fluent reading.
+
 ## Other texts
 
-- https://help.descript.com/hc/en-us/articles/10483872100109-Overdub-sample-training-script
+- [Descript training script](https://help.descript.com/hc/en-us/articles/10483872100109-Overdub-sample-training-script)
 
-In 2023, Adam Twardoch used ChatGPT to convert the Harvard-NGSL sentences and two sets of 60 original IEEE Harvard sentences into short stories. These short stories use the original vocabulary, but are formatted for more fluent reading.
