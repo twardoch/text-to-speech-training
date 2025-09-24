@@ -1,0 +1,698 @@
+Project Structure:
+📁 text-to-speech-training
+├── 📁 docs
+│   ├── 📄 _config.yml
+│   ├── 📄 harvard-ngsl-sentences.md
+│   ├── 📄 harvard-ngsl-story-1.md
+│   ├── 📄 harvard-ngsl-story-2.md
+│   ├── 📄 harvard-paragraphs.md
+│   ├── 📄 harvard-story-1.md
+│   ├── 📄 harvard-story-2.md
+│   └── 📄 README.md
+├── 📄 .gitignore
+├── 📄 LICENSE
+└── 📄 README.md
+
+
+<documents>
+<document index="1">
+<source>.gitignore</source>
+<document_content>
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+</document_content>
+</document>
+
+<document index="2">
+<source>LICENSE</source>
+<document_content>
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+</document_content>
+</document>
+
+<document index="3">
+<source>README.md</source>
+<document_content>
+# text-to-speech-training
+
+Various data for text-to-speech (TTS) training. See [website](https://twardoch.github.io/text-to-speech-training/)
+
+
+</document_content>
+</document>
+
+<document index="4">
+<source>docs/README.md</source>
+<document_content>
+---
+layout: default
+title: "Adam Twardoch’s TTS training data"
+nav_order: 1
+permalink: /
+---
+
+# text-to-speech-training
+
+Various data for text-to-speech (TTS) training.
+
+## Harvard sentences
+
+### Original IEEE Harvard sentences
+
+- **[HTML](https://www.cs.columbia.edu/~hgs/audio/harvard.html)**
+- **[TXT](https://www.cs.cmu.edu/afs/cs.cmu.edu/project/fgdata/OldFiles/Recorder.app/utterances/Type1/harvsents.txt)**
+- **[Audio: American](https://www.voiptroubleshooter.com/open_speech/american.html)**
+- **[Audio: British](https://www.voiptroubleshooter.com/open_speech/british.html)**
+
+The **IEEE Harvard sentences** is a collection of 720 phonemically balanced short sample phrases in English. 
+
+### Background info
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Harvard_sentences)
+- [article](https://theworld.org/stories/2015-06-22/creating-magnetic-poetry-using-harvard-sentences-might-just-be-most-geeky-thing)
+
+### Harvard-NGSL sentences
+
+- **[Harvard-NGSL sentences](harvard-ngsl-sentences)**
+
+Kakeru Yazawa has produced a subset of 50 IEEE Harvard sentences from the full list of 720. These are phonemically balanced sentences for English learner speech corpora named the **Harvard-NGSL sentences**. These comprise core high-frequency vocabulary words for second language English learners were selected based on the New General Service List (NGSL), and are thus learner-oriented, unlike most other phoemically balanced materials which contain low-frequency and low-familiarity words that are of limited use for learners. 
+
+Published in [Yazawa, Kakeru. (2022). Harvard-NGSL sentences for English learner speech corpora. 10.1109/O-COCOSDA202257103.2022.9998002.](https://www.researchgate.net/publication/365766701_Harvard-NGSL_sentences_for_English_learner_speech_corpora)
+
+
+## Harvard stories
+
+- **[Harvard-NGSL story 1](harvard-ngsl-story-1) “Life’s Challenges and Choices”**
+- **[Harvard-NGSL story 2](harvard-ngsl-story-2) “A Day Full of Surprises”**
+- **[Harvard story 1](harvard-story-1) “A Day of Many Activities”**
+- **[Harvard story 2](harvard-story-2) “A Day at the Circus and Beyond”**
+
+In 2023, Adam Twardoch used ChatGPT to convert the Harvard-NGSL sentences and two sets of 60 original IEEE Harvard sentences into short stories. These short stories use the original vocabulary, but are formatted for more fluent reading.
+
+## Other texts
+
+- [Descript training script](https://help.descript.com/hc/en-us/articles/10483872100109-Overdub-sample-training-script)
+
+
+</document_content>
+</document>
+
+<document index="5">
+<source>docs/_config.yml</source>
+<document_content>
+title: Adam Twardoch’s TTS training data
+description: Some training data for text-to-speech
+baseurl: "/"
+url: "https://twardoch.github.io/text-to-speech-data"
+remote_theme: pmarsceill/just-the-docs
+color_scheme: "light"
+kramdown:
+  parse_block_html: true
+heading_anchors: true
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+permalink: pretty
+
+search_enabled: true
+
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: true
+
+footer_content: "Compiled by Adam Twardoch"
+
+</document_content>
+</document>
+
+<document index="6">
+<source>docs/harvard-ngsl-sentences.md</source>
+<document_content>
+# Harvard-NGSL sentences
+
+50 Harvard sentences selected for phonemic balance, but using familiar vocabulary. Published in [Yazawa, Kakeru. (2022). Harvard-NGSL sentences for English learner speech corpora. 10.1109/O-COCOSDA202257103.2022.9998002.](https://www.researchgate.net/publication/365766701_Harvard-NGSL_sentences_for_English_learner_speech_corpora)
+
+--- 
+
+Help the woman get back to her feet. 
+The young girl gave no clear response. 
+The term ended in late June that year. 
+The bill was paid every third week. 
+Type out three lists of orders. 
+The harder he tried the less he got done. 
+Two plus seven is less than ten. 
+Guess the result from the first scores. 
+Drop the two when you add the figures. 
+Sunday is the best part of the week. 
+Where were they when the noise started. 
+Write at once or you may forget it. 
+The play began as soon as we sat down. 
+They are men who walk the middle of the road. 
+Both brothers wear the same size. 
+In some form or other we need fun. 
+We are sure that one war is enough. 
+Time brings us many changes. 
+Women form less than half of the group. 
+Most of the news is easy for us to hear. 
+Next Tuesday we must vote. 
+It takes a lot of help to finish these. 
+Go now and come here later. 
+That move means the game is over. 
+He wrote down a long list of items. 
+Much of the story makes good sense. 
+To have is better than to wait and hope. 
+The music played on while they talked. 
+We need an end of all such matter. 
+We don’t get much money but we have fun. 
+The way to save money is not to spend much. 
+There are many ways to do these things. 
+Even a just cause needs power to win. 
+Those last words were a strong statement. 
+Next Sunday is the twelfth of the month. 
+They took their kids from the public school. 
+Set the piece here and say nothing. 
+Choose between the high road and the low. 
+There is a strong chance it will happen once more. 
+A six comes up more often than a ten. 
+The team with the best timing looks good. 
+The facts don’t always show who is right. 
+It was done before the boy could see it. 
+To send it now in large amounts is bad. 
+The first part of the plan needs changing. 
+Many hands help get the job done. 
+Open your book to the first page. 
+Will you please answer that phone. 
+Small children came to see him. 
+She called his name many times. 
+</document_content>
+</document>
+
+<document index="7">
+<source>docs/harvard-ngsl-story-1.md</source>
+<document_content>
+
+# Harvard-NGSL story 1
+
+## “Life’s Challenges and Choices”
+
+It was a typical day, and a woman had fallen to the ground. A young girl was asked to help, but she gave no clear response. The term ended in late June that year, and the bill was paid every third week.
+
+Type out three lists of orders was the next task, and the harder the person tried, the less he got done. The fact that two plus seven is less than ten was a simple arithmetic problem, but it still required attention. The task was to guess the result from the first scores, and the instruction was to drop the two when you add the figures.
+
+Sunday was considered the best part of the week, and people wondered where they were when the noise started. The task was to write at once or risk forgetting it, and the play began as soon as they sat down.
+
+There were men who walked the middle of the road, and both brothers wore the same size. In some form or other, fun was a necessary aspect of life. The belief was that one war was enough, and time brought many changes. Women formed less than half of the group, but most of the news was easy to hear.
+
+The next Tuesday was the day to vote, and it took a lot of help to finish these tasks. The instruction was to go now and come back later, and that move meant the game was over. A long list of items was written down, and much of the story made good sense. To have was considered better than to wait and hope, and the music played on while they talked.
+
+An end was needed for all such matters, and they didn't have much money, but they still had fun. The way to save money was not to spend much, and there were many ways to do these things. Even a just cause needed power to win, and those last words were a strong statement.
+
+Next Sunday was the twelfth of the month, and they took their kids from the public school. The task was to set the piece there and say nothing, and the choice was between the high road and the low. There was a strong chance that it would happen once more, and a six came up more often than a ten. The team with the best timing looked good, but the facts didn't always show who was right.
+
+It was done before the boy could see it, and to send it now in large amounts was considered bad. The first part of the plan needed changing, and many hands helped get the job done. The instruction was to open the book to the first page, and someone was asked to answer the phone.
+
+Small children came to see him, and she called his name many times. It was another day filled with challenges and choices, but the journey continued.
+
+</document_content>
+</document>
+
+<document index="8">
+<source>docs/harvard-ngsl-story-2.md</source>
+<document_content>
+
+# Harvard-NGSL story 2
+
+## “A Day Full of Surprises”
+
+It was just a typical day... or so it seemed. But little did a woman know that she would need help getting back on her feet! It took a LOT of effort — but with the help of her friends, she finally made it up. They laughed and joked, telling her to “go now, and come back later.”
+
+But... the fun wasn’t over yet! Oh, no! As they played a game, the woman made a move that signaled the end of the game. They all cheered “HOORAY!!!”, knowing that their victory was well-deserved. Hah hah hah... One of them wrote down a long list of items, documenting their win for posterity.
+
+So, what did they do next? Good that you ask! They settled down and discussed the game. Then, suddenly, they realized that much of their story made good sense. They agreed that “to HAVE is better than to WAIT, and HOPE.” The music played on in the background, adding to the lively atmosphere.
+
+However, they all knew that they needed to bring this joyous occasion to an end. “We need an end to all such matters,” they said in unison. Despite not making much money, they had a great time together, so they all agreed that the best way to save money is to simply not spend much.
+
+“There are many ways to have fun”, they all agreed on that! And even a JUST cause needs power to win. Those last words were a strong statement, and everyone took heed. They checked the calendar and noted that next Sunday was the twelfth of the month.
+
+The group decided to take their kids from the public school, and set them up with a private education. ”Set the piece here and say nothing,” one of them instructed. They had to choose between the high road and the low, and they were determined to take the high road.
+
+There was a strong chance that their joyous day would happen once more, and a six was more likely to come up than a ten. The team with the best timing always looks good, but they all knew that the facts don’t always show who is right. But what about the boy? Oh, it was done before the boy could see it, so they all breathed a sigh of relief.
+
+They all agreed that to send their happiness in large amounts would be bad, and that the first part of the plan needed changing, because, as they say, “many hands make light work,” so they all joined in — to get the job done! They opened their books to the first page, eager to continue their journey.
+
+Just then, the phone rang. “Will you please answer that phone,” one of them asked. And so, they continued on with their day, filled with surprises and laughter. Small children came to see them, and the woman’s name was called many times. And so, their day ended, filled with joy and memories to last a lifetime.
+
+</document_content>
+</document>
+
+<document index="9">
+<source>docs/harvard-paragraphs.md</source>
+<document_content>
+
+# IEEE Harvard paragraphs
+
+Below are the original IEEE Harvard sentences, grouped into 12 paragraphs with 60 sentences each. The sentences are phonemically balanced, and are intended for use in speech recognition research.
+
+--- 
+
+The birch canoe slid on the smooth planks. Glue the sheet to the dark blue background. It's easy to tell the depth of a well. These days a chicken leg is a rare dish. Rice is often served in round bowls. The juice of lemons makes fine punch. The box was thrown beside the parked truck. The hogs were fed chopped corn and garbage. Four hours of steady work faced us. A large size in stockings is hard to sell. The boy was there when the sun rose. A rod is used to catch pink salmon. The source of the huge river is the clear spring. Kick the ball straight and follow through. Help the woman get back to her feet. A pot of tea helps to pass the evening. Smoky fires lack flame and heat. The soft cushion broke the man's fall. The salt breeze came across from the sea. The girl at the booth sold fifty bonds. The small pup gnawed a hole in the sock. The fish twisted and turned on the bent hook. Press the pants and sew a button on the vest. The swan dive was far short of perfect. The beauty of the view stunned the young boy. Two blue fish swam in the tank. Her purse was full of useless trash. The colt reared and threw the tall rider. It snowed, rained, and hailed the same morning. Read verse out loud for pleasure. Hoist the load to your left shoulder. Take the winding path to reach the lake. Note closely the size of the gas tank. Wipe the grease off his dirty face. Mend the coat before you go out. The wrist was badly strained and hung limp. The stray cat gave birth to kittens. The young girl gave no clear response. The meal was cooked before the bell rang. What joy there is in living. A king ruled the state in the early days. The ship was torn apart on the sharp reef. Sickness kept him home the third week. The wide road shimmered in the hot sun. The lazy cow lay in the cool grass. Lift the square stone over the fence. The rope will bind the seven books at once. Hop over the fence and plunge in. The friendly gang left the drug store. Mesh wire keeps chicks inside. The frosty air passed through the coat. The crooked maze failed to fool the mouse. Adding fast leads to wrong sums. The show was a flop from the very start. A saw is a tool used for making boards. The wagon moved on well oiled wheels. March the soldiers past the next hill. A cup of sugar makes sweet fudge. Place a rosebush near the porch steps. Both lost their lives in the raging storm. 
+
+We talked of the side show in the circus. Use a pencil to write the first draft. He ran half way to the hardware store. The clock struck to mark the third period. A small creek cut across the field. Cars and busses stalled in snow drifts. The set of china hit the floor with a crash. This is a grand season for hikes on the road. The dune rose from the edge of the water. Those words were the cue for the actor to leave. A yacht slid around the point into the bay. The two met while playing on the sand. The ink stain dried on the finished page. The walled town was seized without a fight. The lease ran out in sixteen weeks. A tame squirrel makes a nice pet. The horn of the car woke the sleeping cop. The heart beat strongly and with firm strokes. The pearl was worn in a thin silver ring. The fruit peel was cut in thick slices. The Navy attacked the big task force. See the cat glaring at the scared mouse. There are more than two factors here. The hat brim was wide and too droopy. The lawyer tried to lose his case. The grass curled around the fence post. Cut the pie into large parts. Men strive but seldom get rich. Always close the barn door tight. He lay prone and hardly moved a limb. The slush lay deep along the street. A wisp of cloud hung in the blue air. A pound of sugar costs more than eggs. The fin was sharp and cut the clear water. The play seems dull and quite stupid. Bail the boat to stop it from sinking. The term ended in late june that year. A Tusk is used to make costly gifts. Ten pins were set in order. The bill was paid every third week. Oak is strong and also gives shade. Cats and Dogs each hate the other. The pipe began to rust while new. Open the crate but don't break the glass. Add the sum to the product of these three. Thieves who rob friends deserve jail. The ripe taste of cheese improves with age. Act on these orders with great speed. The hog crawled under the high fence. Move the vat over the hot fire. The bark of the pine tree was shiny and dark. Leaves turn brown and yellow in the fall. The pennant waved when the wind blew. Split the log with a quick, sharp blow. Burn peat after the logs give out. He ordered peach pie with ice cream. Weave the carpet on the right hand side. Hemp is a weed found in parts of the tropics. A lame back kept his score low. We find joy in the simplest things. 
+
+Type out three lists of orders. The harder he tried the less he got done. The boss ran the show with a watchful eye. The cup cracked and spilled its contents. Paste can cleanse the most dirty brass. The slang word for raw whiskey is booze. It caught its hind paw in a rusty trap. The wharf could be seen at the farther shore. Feel the heat of the weak dying flame. The tiny girl took off her hat. A cramp is no small danger on a swim. He said the same phrase thirty times. Pluck the bright rose without leaves. Two plus seven is less than ten. The glow deepened in the eyes of the sweet girl. Bring your problems to the wise chief. Write a fond note to the friend you cherish. Clothes and lodging are free to new men. We frown when events take a bad turn. Port is a strong wine with a smoky taste. The young kid jumped the rusty gate. Guess the result from the first scores. A salt pickle tastes fine with ham. The just claim got the right verdict. Those thistles bend in a high wind. Pure bred poodles have curls. The tree top waved in a graceful way. The spot on the blotter was made by green ink. Mud was spattered on the front of his white shirt. The cigar burned a hole in the desk top. The empty flask stood on the tin tray. A speedy man can beat this track mark. He broke a new shoelace that day. The coffee stand is too high for the couch. The urge to write short stories is rare. The pencils have all been used. The pirates seized the crew of the lost ship. We tried to replace the coin but failed. She sewed the torn coat quite neatly. The sofa cushion is red and of light weight. The jacket hung on the back of the wide chair. At that high level the air is pure. Drop the two when you add the figures. A filing case is now hard to buy. An abrupt start does not win the prize. Wood is best for making toys and blocks. The office paint was a dull, sad tan. He knew the skill of the great young actress. A rag will soak up spilled water. A shower of dirt fell from the hot pipes. Steam hissed from the broken valve. The child almost hurt the small dog. There was a sound of dry leaves outside. The sky that morning was clear and bright blue. Torn scraps littered the stone floor. Sunday is the best part of the week. The doctor cured him with these pills. The new girl was fired today at noon. They felt gay when the ship arrived in port. Add the store's account to the last cent. 
+
+Acid burns holes in wool cloth. Fairy tales should be fun to write. Eight miles of woodland burned to waste. The third act was dull and tired the players. A young child should not suffer fright. Add the column and put the sum here. We admire and love a good cook. There the flood mark is ten inches. He carved a head from the round block of marble. She has a smart way of wearing clothes. The fruit of a fig tree is apple shaped. Corn cobs can be used to kindle a fire. Where were they when the noise started. The paper box is full of thumb tacks. Sell your gift to a buyer at a good gain. The tongs lay beside the ice pail. The petals fall with the next puff of wind. Bring your best compass to the third class. They could laugh although they were sad. Farmers came in to thresh the oat crop. The brown house was on fire to the attic. The lure is used to catch trout and flounder. Float the soap on top of the bath water. A blue crane is a tall wading bird. A fresh start will work such wonders. The club rented the rink for the fifth night. After the dance, they went straight home. The hostess taught the new maid to serve. He wrote his last novel there at the inn. Even the worst will beat his low score. The cement had dried when he moved it. The loss of the second ship was hard to take. The fly made its way along the wall. Do that with a wooden stick. Live wires should be kept covered. The large house had hot water taps. It is hard to erase blue or red ink. Write at once or you may forget it. The doorknob was made of bright clean brass. The wreck occurred by the bank on Main Street. A pencil with black lead writes best. Coax a young calf to drink from a bucket. Schools for ladies teach charm and grace. The lamp shone with a steady green flame. They took the axe and the saw to the forest. The ancient coin was quite dull and worn. The shaky barn fell with a loud crash. Jazz and swing fans like fast music. Rake the rubbish up and then burn it. Slash the gold cloth into fine ribbons. Try to have the court decide the case. They are pushed back each time they attack. He broke his ties with groups of former friends. They floated on the raft to sun their white backs. The map had an X that meant nothing. Whitings are small fish caught in nets. Some ads serve to cheat buyers. Jerk the rope and the bell rings weakly. A waxed floor makes us lose balance. Madam, this is the best brand of corn. 
+
+On the islands the sea breeze is soft and mild. The play began as soon as we sat down. This will lead the world to more sound and fury. Add salt before you fry the egg. The rush for funds reached its peak Tuesday. The birch looked stark white and lonesome. The box is held by a bright red snapper. To make pure ice, you freeze water. The first worm gets snapped early. Jump the fence and hurry up the bank. Yell and clap as the curtain slides back. They are men who walk the middle of the road. Both brothers wear the same size. In some form or other we need fun. The prince ordered his head chopped off. The houses are built of red clay bricks. Ducks fly north but lack a compass. Fruit flavors are used in fizz drinks. These pills do less good than others. Canned pears lack full flavor. The dark pot hung in the front closet. Carry the pail to the wall and spill it there. The train brought our hero to the big town. We are sure that one war is enough. Gray paint stretched for miles around. The rude laugh filled the empty room. High seats are best for football fans. Tea served from the brown jug is tasty. A dash of pepper spoils beef stew. A zestful food is the hot-cross bun. The horse trotted around the field at a brisk pace. Find the twin who stole the pearl necklace. Cut the cord that binds the box tightly. The red tape bound the smuggled food. Look in the corner to find the tan shirt. The cold drizzle will halt the bond drive. Nine men were hired to dig the ruins. The junk yard had a mouldy smell. The flint sputtered and lit a pine torch. Soak the cloth and drown the sharp odor. The shelves were bare of both jam or crackers. A joy to every child is the swan boat. All sat frozen and watched the screen. A cloud of dust stung his tender eyes. To reach the end he needs much courage. Shape the clay gently into block form. A ridge on a smooth surface is a bump or flaw. Hedge apples may stain your hands green. Quench your thirst, then eat the crackers. Tight curls get limp on rainy days. The mute muffled the high tones of the horn. The gold ring fits only a pierced ear. The old pan was covered with hard fudge. Watch the log float in the wide river. The node on the stalk of wheat grew daily. The heap of fallen leaves was set on fire. Write fast if you want to finish early. His shirt was clean but one button was gone. The barrel of beer was a brew of malt and hops. Tin cans are absent from store shelves. 
+
+Slide the box into that empty space. The plant grew large and green in the window. The beam dropped down on the workman's head. Pink clouds floated with the breeze. She danced like a swan, tall and graceful. The tube was blown and the tire flat and useless. It is late morning on the old wall clock. Let's all join as we sing the last chorus. The last switch cannot be turned off. The fight will end in just six minutes. The store walls were lined with colored frocks. The peace league met to discuss their plans. The rise to fame of a person takes luck. Paper is scarce, so write with much care. The quick fox jumped on the sleeping cat. The nozzle of the fire hose was bright brass. Screw the round cap on as tight as needed. Time brings us many changes. The purple tie was ten years old. Men think and plan and sometimes act. Fill the ink jar with sticky glue. He smoke a big pipe with strong contents. We need grain to keep our mules healthy. Pack the records in a neat thin case. The crunch of feet in the snow was the only sound. The copper bowl shone in the sun's rays. Boards will warp unless kept dry. The plush chair leaned against the wall. Glass will clink when struck by metal. Bathe and relax in the cool green grass. Nine rows of soldiers stood in a line. The beach is dry and shallow at low tide. The idea is to sew both edges straight. The kitten chased the dog down the street. Pages bound in cloth make a book. Try to trace the fine lines of the painting. Women form less than half of the group. The zones merge in the central part of town. A gem in the rough needs work to polish. Code is used when secrets are sent. Most of the news is easy for us to hear. He used the lathe to make brass objects. The vane on top of the pole revolved in the wind. Mince pie is a dish served to children. The clan gathered on each dull night. Let it burn, it gives us warmth and comfort. A castle built from sand fails to endure. A child's wit saved the day for us. Tack the strip of carpet to the worn floor. Next Tuesday we must vote. Pour the stew from the pot into the plate. Each penny shone like new. The man went to the woods to gather sticks. The dirt piles were lines along the road. The logs fell and tumbled into the clear stream. Just hoist it up and take it away. A ripe plum is fit for a king's palate. Our plans right now are hazy. Brass rings are sold by these natives. It takes a good trap to capture a bear. 
+
+Feed the white mouse some flower seeds. The thaw came early and freed the stream. He took the lead and kept it the whole distance. The key you designed will fit the lock. Plead to the council to free the poor thief. Better hash is made of rare beef. This plank was made for walking on . The lake sparkled in the red hot sun. He crawled with care along the ledge. Tend the sheep while the dog wanders. It takes a lot of help to finish these. Mark the spot with a sign painted red. Take two shares as a fair profit. The fur of cats goes by many names. North winds bring colds and fevers. He asks no person to vouch for him. Go now and come here later. A sash of gold silk will trim her dress. Soap can wash most dirt away. That move means the game is over. He wrote down a long list of items. A siege will crack the strong defense. Grape juice and water mix well. Roads are paved with sticky tar. Fake stones shine but cost little. The drip of the rain made a pleasant sound. Smoke poured out of every crack. Serve the hot rum to the tired heroes. Much of the story makes good sense. The sun came up to light the eastern sky. Heave the line over the port side. A lathe cuts and trims any wood. It's a dense crowd in two distinct ways. His hip struck the knee of the next player. The stale smell of old beer lingers. The desk was firm on the shaky floor. It takes heat to bring out the odor. Beef is scarcer than some lamb. Raise the sail and steer the ship northward. A cone costs five cents on Mondays. A pod is what peas always grow in. Jerk that dart from the cork target. No cement will hold hard wood. We now have a new base for shipping. A list of names is carved around the base. The sheep were led home by a dog. Three for a dime, the young peddler cried. The sense of smell is better than that of touch. No hardship seemed to make him sad. Grace makes up for lack of beauty. Nudge gently but wake her now. The news struck doubt into restless minds. Once we stood beside the shore. A chink in the wall allowed a draft to blow. Fasten two pins on each side. A cold dip restores health and zest. He takes the oath of office each March. The sand drifts over the sills of the old house. The point of the steel pen was bent and twisted. There is a lag between thought and act. 
+
+Seed is needed to plant the spring corn. Draw the chart with heavy black lines. The boy owed his pal thirty cents. The chap slipped into the crowd and was lost. Hats are worn to tea and not to dinner. The ramp led up to the wide highway. Beat the dust from the rug onto the lawn. Say it slowly but make it ring clear. The straw nest housed five robins. Screen the porch with woven straw mats. This horse will nose his way to the finish. The dry wax protects the deep scratch. He picked up the dice for a second roll. These coins will be needed to pay his debt. The nag pulled the frail cart along. Twist the valve and release hot steam. The vamp of the shoe had a gold buckle. The smell of burned rags itches my nose. New pants lack cuffs and pockets. The marsh will freeze when cold enough. They slice the sausage thin with a knife. The bloom of the rose lasts a few days. A gray mare walked before the colt. Breakfast buns are fine with a hot drink. Bottles hold four kinds of rum. The man wore a feather in his felt hat. He wheeled the bike past the winding road. Drop the ashes on the worn old rug. The desk and both chairs were painted tan. Throw out the used paper cup and plate. A clean neck means a neat collar. The couch cover and hall drapes were blue. The stems of the tall glasses cracked and broke. The wall phone rang loud and often. The clothes dried on a thin wooden rack. Turn out the lantern which gives us light. The cleat sank deeply into the soft turf. The bills were mailed promptly on the tenth of the month. To have is better than to wait and hope. The price is fair for a good antique clock. The music played on while they talked. Dispense with a vest on a day like this. The bunch of grapes was pressed into wine. He sent the figs, but kept the ripe cherries. The hinge on the door creaked with old age. The screen before the fire kept in the sparks. Fly by night and you waste little time. Thick glasses helped him read the print. Birth and death marks the limits of life. The chair looked strong but had no bottom. The kite flew wildly in the high wind. A fur muff is stylish once more. The tin box held priceless stones. We need an end of all such matter. The case was puzzling to the old and wise. The bright lanterns were gay on the dark lawn. We don't get much money but we have fun. The youth drove with zest, but little skill. Five years he lived with a shaggy dog. A fence cuts through the corner lot. 
+
+The way to save money is not to spend much. Shut the hatch before the waves push it in. The odor of spring makes young hearts jump. Crack the walnut with your sharp side teeth. He offered proof in the form of a large chart. Send the stuff in a thick paper bag. A quart of milk is water for the most part. They told wild tales to frighten him. The three story house was built of stone. In the rear of the ground floor was a large passage. A man in a blue sweater sat at the desk. Oats are a food eaten by horse and man. Their eyelids droop for want of sleep. A sip of tea revives his tired friend. There are many ways to do these things. Tuck the sheet under the edge of the mat. A force equal to that would move the earth. We like to see clear weather. The work of the tailor is seen on each side. Take a chance and win a china doll. Shake the dust from your shoes, stranger. She was kind to sick old people. The square wooden crate was packed to be shipped. The dusty bench stood by the stone wall. We dress to suit the weather of most days. Smile when you say nasty words. A bowl of rice is free with chicken stew. The water in this well is a source of good health. Take shelter in this tent, but keep still. That guy is the writer of a few banned books. The little tales they tell are false. The door was barred, locked, and bolted as well. Ripe pears are fit for a queen's table. A big wet stain was on the round carpet. The kite dipped and swayed, but stayed aloft. The pleasant hours fly by much too soon. The room was crowded with a wild mob. This strong arm shall shield your honor. She blushed when he gave her a white orchid. The beetle droned in the hot June sun. Press the pedal with your left foot. Neat plans fail without luck. The black trunk fell from the landing. The bank pressed for payment of the debt. The theft of the pearl pin was kept secret. Shake hands with this friendly child. The vast space stretched into the far distance. A rich farm is rare in this sandy waste. His wide grin earned many friends. Flax makes a fine brand of paper. Hurdle the pit with the aid of a long pole. A strong bid may scare your partner stiff. Even a just cause needs power to win. Peep under the tent and see the clowns. The leaf drifts along with a slow spin. Cheap clothes are flashy but don't last. A thing of small note can cause despair. Flood the mails with requests for this book. A thick coat of black paint covered all. The pencil was cut to be sharp at both ends. 
+
+Those last words were a strong statement. He wrote his name boldly at the top of the sheet. Dill pickles are sour but taste fine. Down that road is the way to the grain farmer. Either mud or dust are found at all times. The best method is to fix it in place with clips. If you mumble your speech will be lost. At night the alarm roused him from a deep sleep. Read just what the meter says. Fill your pack with bright trinkets for the poor. The small red neon lamp went out. Clams are small, round, soft, and tasty. The fan whirled its round blades softly. The line where the edges join was clean. Breathe deep and smell the piny air. It matters not if he reads these words or those. A brown leather bag hung from its strap. A toad and a frog are hard to tell apart. A white silk jacket goes with any shoes. A break in the dam almost caused a flood. Paint the sockets in the wall dull green. The child crawled into the dense grass. Bribes fail where honest men work. Trample the spark, else the flames will spread. The hilt of the sword was carved with fine designs. A round hole was drilled through the thin board. Footprints showed the path he took up the beach. She was waiting at my front lawn. A vent near the edge brought in fresh air. Prod the old mule with a crooked stick. It is a band of steel three inches wide. The pipe ran almost the length of the ditch. It was hidden from sight by a mass of leaves and shrubs. The weight of the package was seen on the high scale. Wake and rise, and step into the green outdoors. The green light in the brown box flickered. The brass tube circled the high wall. The lobes of her ears were pierced to hold rings. Hold the hammer near the end to drive the nail. Next Sunday is the twelfth of the month. Every word and phrase he speaks is true. He put his last cartridge into the gun and fired. They took their kids from the public school. Drive the screw straight into the wood. Keep the hatch tight and the watch constant. Sever the twine with a quick snip of the knife. Paper will dry out when wet. Slide the catch back and open the desk. Help the weak to preserve their strength. A sullen smile gets few friends. Stop whistling and watch the boys march. Jerk the cord, and out tumbles the gold. Slide the tray across the glass top. The cloud moved in a stately way and was gone. Light maple makes for a swell room. Set the piece here and say nothing. Dull stories make her laugh. A stiff cord will do to fasten your shoe. Get the trust fund to the bank early. Choose between the high road and the low. 
+
+A plea for funds seems to come again. He lent his coat to the tall gaunt stranger. There is a strong chance it will happen once more. The duke left the park in a silver coach. Greet the new guests and leave quickly. When the frost has come it is time for turkey. Sweet words work better than fierce. A thin stripe runs down the middle. A six comes up more often than a ten. Lush ferns grow on the lofty rocks. The ram scared the school children off. The team with the best timing looks good. The farmer swapped his horse for a brown ox. Sit on the perch and tell the others what to do. A steep trail is painful for our feet. The early phase of life moves fast. Green moss grows on the northern side. Tea in thin china has a sweet taste. Pitch the straw through the door of the stable. The latch on the back gate needed a nail. The goose was brought straight from the old market. The sink is the thing in which we pile dishes. A whiff of it will cure the most stubborn cold. The facts don't always show who is right. She flaps her cape as she parades the street. The loss of the cruiser was a blow to the fleet. Loop the braid to the left and then over. Plead with the lawyer to drop the lost cause. Calves thrive on tender spring grass. Post no bills on this office wall. Tear a thin sheet from the yellow pad. A cruise in warm waters in a sleek yacht is fun. A streak of color ran down the left edge. It was done before the boy could see it. Crouch before you jump or miss the mark. Pack the kits and don't forget the salt. The square peg will settle in the round hole. Fine soap saves tender skin. Poached eggs and tea must suffice. Bad nerves are jangled by a door slam. Ship maps are different from those for planes. Dimes showered down from all sides. They sang the same tunes at each party. The sky in the west is tinged with orange red. The pods of peas ferment in bare fields. The horse balked and threw the tall rider. The hitch between the horse and cart broke. Pile the coal high in the shed corner. A gold vase is both rare and costly. The knife was hung inside its bright sheath. The rarest spice comes from the far East. The roof should be tilted at a sharp slant. A smatter of French is worse than none. The mule trod the treadmill day and night. The aim of the contest is to raise a great fund. To send it now in large amounts is bad. There is a fine hard tang in salty air. Cod is the main business of the north shore. The slab was hewn from heavy blocks of slate. Dunk the stale biscuits into strong drink. 
+
+Hang tinsel from both branches. Cap the jar with a tight brass cover. The poor boy missed the boat again. Be sure to set that lamp firmly in the hole. Pick a card and slip it under the pack. A round mat will cover the dull spot. The first part of the plan needs changing. A good book informs of what we ought to know. The mail comes in three batches per day. You cannot brew tea in a cold pot. Dots of light betrayed the black cat. Put the chart on the mantel and tack it down. The night shift men rate extra pay. The red paper brightened the dim stage. See the player scoot to third base. Slide the bill between the two leaves. Many hands help get the job done. We don't like to admit our small faults. No doubt about the way the wind blows. Dig deep in the earth for pirate's gold. The steady drip is worse than a drenching rain. A flat pack takes less luggage space. Green ice frosted the punch bowl. A stuffed chair slipped from the moving van. The stitch will serve but needs to be shortened. A thin book fits in the side pocket. The gloss on top made it unfit to read. The hail pattered on the burnt brown grass. Seven seals were stamped on great sheets. Our troops are set to strike heavy blows. The store was jammed before the sale could start. It was a bad error on the part of the new judge. One step more and the board will collapse. Take the match and strike it against your shoe. The pot boiled but the contents failed to jell. The baby puts his right foot in his mouth. The bombs left most of the town in ruins. Stop and stare at the hard working man. The streets are narrow and full of sharp turns. The pup jerked the leash as he saw a feline shape. Open your book to the first page. Fish evade the net and swim off. Dip the pail once and let it settle. Will you please answer that phone. The big red apple fell to the ground. The curtain rose and the show was on. The young prince became heir to the throne. He sent the boy on a short errand. Leave now and you will arrive on time. The corner store was robbed last night. A gold ring will please most any girl. The long journey home took a year. She saw a cat in the neighbor's house. A pink shell was found on the sandy beach. Small children came to see him. The grass and bushes were wet with dew. The blind man counted his old coins. A severe storm tore down the barn. She called his name many times. When you hear the bell, come quickly.
+
+</document_content>
+</document>
+
+<document index="10">
+<source>docs/harvard-story-1.md</source>
+<document_content>
+# Harvard Story 1
+
+## “A Day of Many Activities”
+
+It was a busy day filled with a multitude of tasks and activities. The sun rose, and a young boy was already there to see it. He watched as a birch canoe slid on the smooth planks of a lake, seemingly gliding effortlessly through the water.
+
+In the meantime, a man was faced with four hours of steady work. He started by gluing a sheet to a dark blue background, carefully ensuring that the bond was strong. Another person was tasked with the simple but important job of determining the depth of a well. It was easy to tell with just a glance.
+
+One rare dish that could be found that day was a chicken leg, a delicacy in these times. Rice, on the other hand, was a more common sight. It was often served in round bowls, a staple food for many. The juice of lemons made a fine punch, adding a tangy flavor to the drink.
+
+A box was thrown beside a parked truck, its contents unknown. Meanwhile, hogs were being fed chopped corn and garbage, their squeals of delight filling the air.
+
+A young girl at a booth sold fifty bonds, her financial savvy earning her a tidy sum. But the small pup gnawing a hole in a sock was more interested in play than work. The fish, however, twisted and turned on the bent hook, trying to free itself from the fisherman's line.
+
+Other tasks that needed to be done included pressing pants and sewing a button on a vest. A swan dive was attempted, but it fell far short of perfection. The beauty of the view, however, still stunned the young boy, leaving him in awe. Two blue fish swam in a tank, their graceful movements a sight to behold.
+
+A woman stumbled and fell, but a soft cushion broke her fall. A man came to her aid, helping her back to her feet. As the day wore on, a pot of tea helped to pass the evening, while smoky fires lacked both flame and heat. The salt breeze came across from the sea, refreshing those who were nearby.
+
+As the sun began to set, a man wiped the grease off his dirty face and mended his coat before heading out. But his wrist was badly strained and hung limp, making the task difficult. A stray cat gave birth to kittens, adding to the hustle and bustle of the day. The young girl gave no clear response when asked a question, her thoughts unknown. The meal was cooked before the bell rang, satisfying the hunger of those who were waiting.
+
+There was joy in living, a reminder of the simple pleasures in life. A king had once ruled the state in the early days, his legacy still remembered. But a ship was torn apart on a sharp reef, a warning of the dangers that lay ahead. Sickness kept a man at home for the third week, but the wide road shimmered in the hot sun for those who were well. The lazy cow lay in the cool grass, taking a well-deserved rest.
+
+A task of lifting a square stone over a fence was accomplished with ease. The rope bound the seven books at once, making the job quicker. One could hop over the fence and plunge into the refreshing water of the lake by taking the winding path. The size of the gas tank was noted closely, a important detail to remember.
+
+A cup of sugar made sweet fudge, a treat for those with a sweet tooth. A rosebush was placed near the porch steps, adding a touch of beauty to the surroundings. Tragically, both a man and woman lost their lives in the raging storm, a reminder of the fragility of life.
+
+
+</document_content>
+</document>
+
+<document index="11">
+<source>docs/harvard-story-2.md</source>
+<document_content>
+# Harvard story 2
+
+## “A Day at the Circus and Beyond”
+
+Once upon a time, in a small town, there was a man who lived a simple life. His days were filled with tasks that he carried out with determination. He knew that life was hard, and men often strived to get rich, but he also knew that wealth was not always attainable.
+
+One day, he was cutting a pie into large parts when he remembered to close the barn door tight. He lay prone and hardly moved a limb, taking a moment to rest from his daily chores. The slush lay deep along the street, but he was not discouraged by the weather. Instead, he gazed up at the sky and saw a wisp of cloud hanging in the blue air.
+
+As he went about his day, he noticed that the cost of living had gone up. A pound of sugar now cost more than eggs. He sighed, but continued on. He walked down to the river, where he saw a fish with a fin so sharp that it cut through the clear water. The man thought about how life was like that fish, always moving forward, never looking back.
+
+He then made his way to the town square, where a play was being performed. To his disappointment, the play seemed dull and quite stupid. He longed for something more exciting. He then remembered the boat that he had to bail out to prevent it from sinking. The term ended in late June that year, and he was happy to have finished another year of hard work.
+
+As he walked home, he came across a man who was carving a Tusk, which would be used to make costly gifts. The man marveled at the intricate work that went into such a piece. He then saw ten pins that had been set in order, ready for a game of bowling. He smiled, remembering how much he enjoyed that pastime.
+
+The man's life was filled with routine. Every third week, he paid his bills, and he knew that he had to be careful with his money. The strong oak trees that lined his street provided him with both strength and shade. He knew that life was like those trees, strong and steadfast, never giving up.
+
+Cats and dogs each hated the other, and he chuckled at the thought. He then noticed that his pipe had begun to rust, even though it was brand new. He shook his head and made his way home, where he opened a crate filled with fragile glass. He was careful not to break the glass as he added the sum to the product of these three.
+
+The man knew that thieves who robbed friends deserved to be put in jail, and he was grateful that he had never encountered such a situation in his life. He also knew that the ripe taste of cheese only improved with age, just like the lessons that life taught him. He was instructed to act on these orders with great speed, and he did so with determination.
+
+The hog crawled under the high fence, and he marveled at the resilience of the animal. He then remembered the vat that needed to be moved over the hot fire, and he quickly got to work. The bark of the pine tree was shiny and dark, and he thought about how life was like that tree, always adapting to its surroundings.
+
+The leaves turn brown and yellow in the fall, and he was reminded of the changing seasons. The pennant waved in the wind, and he thought about how life was like that flag, always moving forward, never looking back. He split the log with a quick, sharp blow, and then burned the peat after the logs gave out.
+
+Finally, he sat down for dinner and ordered peach pie with ice cream. 
+
+We had a delightful conversation about the side show at the circus. My companion suggested that I jot down my thoughts in a notebook, using a pencil as a first draft. Excited by the idea, I headed out to purchase a notebook, but only made it halfway to the hardware store. Suddenly, the clock tower rang out, marking the beginning of the third period.
+
+As I continued my journey, I noticed a small creek cutting through a field. The snow was so heavy that cars and buses were getting stuck in drifts. I hurried inside to avoid the inclement weather and was greeted by the sound of a set of china hitting the floor and shattering. Despite the winter weather, it was still a grand season for hikes along the roads.
+
+A dune rose up from the edge of the water as I gazed out the window. Those were the cue for an actor to take his leave. I watched as a yacht slid gracefully around a point and into the bay. I couldn't help but smile as I remembered the time I met a friend while playing on the sand.
+
+I sat down to write and watched as the ink stain dried on the finished page. The walled town was taken without a fight and the lease would run out in sixteen weeks. A pet squirrel was running around the room, clearly well-behaved. Just then, the horn of a car blared, waking up a sleeping cop.
+
+My heart beat strongly, with firm strokes, and I couldn't help but touch the pearl I was wearing in a thin silver ring. The fruit peel was cut into thick slices, reminding me of the Navy's attack on the big task force. I turned to see a cat glaring at a scared mouse and knew there were more than two factors at play. The hat brim was wide and droopy, much like the lawyer trying to lose his case.
+
+The grass curled around the fence post as I walked outside. 
+</document_content>
+</document>
+
+</documents>
